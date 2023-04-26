@@ -21,4 +21,4 @@ jobs:
               run: npm publish --access public
               working-directory: mypackage
               env:
-                  NODE_AUTH_TOKEN: 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
+                  NODE_AUTH_TOKEN: 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
