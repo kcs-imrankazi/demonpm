@@ -1,0 +1,32 @@
+{
+  "name": "@imrankazi/kcsnpmcicddemo",
+  "version": "0.3.1",
+  "description": "📦 npm package tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kcsplcompusoft/kcsnpmcicddemo.git"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "package",
+    "registry"
+  ],
+  "author": {
+    "name": "kcs",
+    "email": "imran.kazi@kcsitglobal.com",
+    "url": "https://kcsitglobal.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kcsplcompusoft/kcsnpmcicddemo/issues"
+  },
+  "homepage": "https://github.com/kcsplcompusoft/kcsnpmcicddemo#readme"
+}
