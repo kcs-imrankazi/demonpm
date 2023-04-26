@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kcsplcompusoft/kcsnpmcicddemo.git"
+    "url": "https://github.com/kcs-imrankazi/demonpm"
   },
   "keywords": [
     "npm",
@@ -26,7 +26,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kcsplcompusoft/kcsnpmcicddemo/issues"
+    "url": "https://github.com/kcs-imrankazi/demonpm/issues"
   },
-  "homepage": "https://github.com/kcsplcompusoft/kcsnpmcicddemo#readme"
+  "homepage": "https://github.com/kcs-imrankazi/demonpm#readme"
 }
