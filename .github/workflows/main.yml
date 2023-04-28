@@ -16,12 +16,7 @@ jobs:
               with:
                   node-version: '14'
                   registry-url: https://registry.npmjs.org
-           - name: build the app
-              run: |
-               cd mypackage
-               npm install 
-               npm run build
-           - name: publish               
+            - name: publish               
               run: npm publish --access public
               working-directory: mypackage/dist
               env:
