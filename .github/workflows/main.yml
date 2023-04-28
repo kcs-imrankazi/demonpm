@@ -11,7 +11,9 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: build the app
-              run: npm install & tsc 
+              run: |
+                cd mypackage
+                npm install & tsc 
 
     release:
         name: Release
@@ -26,6 +28,6 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish               
               run: npm publish --access public
-              working-directory: dist
+              working-directory: mypackage/dist
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_UPDATED}}
