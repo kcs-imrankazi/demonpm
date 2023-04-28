@@ -17,9 +17,8 @@ jobs:
                   node-version: '14'
             - name: build the app
               run: |
-                cd mypackage
                 npm install 
-                tsc 
+                npm run build
 
     release:
         name: Release
