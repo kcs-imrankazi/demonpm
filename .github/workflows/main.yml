@@ -24,6 +24,7 @@ jobs:
                 cd mypackage
                 tsc -p tsconfig.json
                 tsc -p tsconfig-cjs.json
-                npm publish --access public             
+                npm publish --access public  
+              working-directory: mypackage           
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_UPDATED}}            
