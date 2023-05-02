@@ -4,7 +4,9 @@
   "description": "📦 npm package tutorial",
   "main": "index.ts",
   "scripts": {
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepare": "npm run build-ts",
+    "build-ts": "tsc"
   },
   "files": [
     "index.js"
@@ -19,9 +21,6 @@
     "package",
     "registry"
   ],
-  "scripts": {
-    "build" : "tsc"
-  },
   "author": {
     "name": "kcs",
     "email": "imran.kazi@kcsitglobal.com",
