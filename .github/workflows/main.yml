@@ -5,8 +5,8 @@ on:
     branches:
               main
 jobs: 
-    release:
-        name: Release
+    build:
+        name: build
         runs-on: ubuntu-latest        
         steps:
             - name: checkout
@@ -14,10 +14,5 @@ jobs:
             - name: node
               uses: actions/setup-node@v3
               with:
-                  node-version: '14'
-                  registry-url: https://registry.npmjs.org
-            - name: publish               
-              run: npm publish --access public
-              working-directory: mypackage/dist
-              env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_UPDATED}}
+                  node-version: [14.x,15.x]          
+            - run: tsc               
