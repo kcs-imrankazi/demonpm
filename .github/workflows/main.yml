@@ -19,6 +19,7 @@ jobs:
               run: |
                 cd mypackage
                 tsc
-                npm publish --access public            
+                npm publish --access public     
+              working-directory: mypackage       
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_UPDATED}}            
