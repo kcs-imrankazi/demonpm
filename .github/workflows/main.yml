@@ -17,6 +17,7 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish
               run: |
+                cd mypackage
                 tsc
                 npm publish --access public            
               env:
