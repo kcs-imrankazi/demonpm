@@ -16,7 +16,10 @@ jobs:
                   node-version: 14   
                   registry-url: https://registry.npmjs.org
             - name: publish
-              run:  npm publish --access public  
-              working-directory: mypackage        
+              run:  |
+                cd mypackage
+                tsc -p tsconfig.json
+                tsc -p tsconfig-cjs.json
+                npm publish --access public             
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_UPDATED}}            

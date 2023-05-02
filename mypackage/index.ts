@@ -1,3 +1,3 @@
-export const getStringLength = (str)=>{
+export const getStringLength = (str:String)=>{
     return str.length;
 }
