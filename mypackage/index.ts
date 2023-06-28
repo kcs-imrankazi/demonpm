@@ -5,3 +5,9 @@ export const getStringLength = (str:String)=>{
 export const convertToUppercase = (str:string)=>{
     return str.toUpperCase()
 }
+
+export const convertToLowercase = (str:string)=>{
+    return str.toLowerCase()
+}
+
+
